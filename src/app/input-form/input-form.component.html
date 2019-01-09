@@ -1,0 +1,17 @@
+<p>
+  input-form works!
+</p>
+
+<p>
+    <input type="text" [(ngModel)] = "userName">
+</p>
+
+<p>
+  <button class="btn btn-primary" 
+          [disabled] = "userName === ''"
+          (click) = "userName = ''"
+          >Reset</button>
+</p>
+
+<p>{{ userName }}</p>
+
